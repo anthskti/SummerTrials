@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://te4khppinu1r"]
+
+[ext_resource type="Script" path="res://scripts/Player.gd" id="1_eveah"]
+[ext_resource type="Texture2D" uid="uid://cn22qenyrggtb" path="res://assets/forsprite1.png" id="2_k53bn"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tj2ah"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_k53bn")
+}],
+"loop": true,
+"name": &"run",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_msejq"]
+size = Vector2(16, 16)
+
+[node name="Sakuti" type="CharacterBody2D"]
+script = ExtResource("1_eveah")
+character_name = "Sakuti"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(2.25, 3)
+sprite_frames = SubResource("SpriteFrames_tj2ah")
+animation = &"run"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(2.25, 3)
+shape = SubResource("RectangleShape2D_msejq")

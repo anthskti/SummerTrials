@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://pmjdilgi0bkl"]
+
+[ext_resource type="Script" path="res://scripts/Player.gd" id="1_1dhwf"]
+[ext_resource type="Texture2D" uid="uid://cgkb2noi14g4n" path="res://assets/forsprite2_1.png" id="2_ok3s3"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_35vu3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ok3s3")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cnvdg"]
+size = Vector2(88, 16)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_1dhwf")
+character_name = "Kitspii"
+is_nimble = false
+is_active = false
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(2.68221e-06, 0)
+scale = Vector2(5.5, 8)
+sprite_frames = SubResource("SpriteFrames_35vu3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(1, 8)
+shape = SubResource("RectangleShape2D_cnvdg")

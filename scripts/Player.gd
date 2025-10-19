@@ -55,6 +55,7 @@ func _physics_process(delta):
 	
 	move_and_slide()
 
+
 func set_active(active: bool):
 	is_active = active
 	if not is_active:
@@ -64,9 +65,9 @@ func set_active(active: bool):
 func update_visual_state():
 	# Visual indication of active character
 	if is_active:
-		modulate = Color(1, 1, 1, 1)  # Full brightness
+		modulate = Color(1, 1, 1, 1) 
 	else:
-		modulate = Color(0.6, 0.6, 0.6, 1)  # Dimmed
+		modulate = Color(0.6, 0.6, 0.6, 1)  # Dimmed inactive character
 
 func can_fit_through_small_gap() -> bool:
 	return is_nimble

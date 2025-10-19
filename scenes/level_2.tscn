@@ -3,8 +3,8 @@
 [ext_resource type="PackedScene" uid="uid://dyqo8o4c7exyt" path="res://scenes/door.tscn" id="1_32bce"]
 [ext_resource type="Texture2D" uid="uid://cn22qenyrggtb" path="res://assets/forsprite1.png" id="1_dj12d"]
 [ext_resource type="PackedScene" uid="uid://dkrwa37truqcg" path="res://scenes/finish_line.tscn" id="2_s485r"]
-[ext_resource type="PackedScene" uid="uid://pmjdilgi0bkl" path="res://scenes/kitspii.tscn" id="3_d0h0s"]
-[ext_resource type="PackedScene" uid="uid://te4khppinu1r" path="res://scenes/sakuti.tscn" id="4_qumee"]
+[ext_resource type="PackedScene" uid="uid://pmjdilgi0bkl" path="res://scenes/sakuti.tscn" id="3_d0h0s"]
+[ext_resource type="PackedScene" uid="uid://te4khppinu1r" path="res://scenes/kitspii.tscn" id="4_qumee"]
 [ext_resource type="PackedScene" uid="uid://dghkicwgxo23l" path="res://scenes/pressure_plate.tscn" id="5_4423w"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nqtkl"]
@@ -12,6 +12,7 @@ texture = ExtResource("1_dj12d")
 0:0/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_ovryg"]
+physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_nqtkl")
 
 [node name="Level2" type="Node2D"]

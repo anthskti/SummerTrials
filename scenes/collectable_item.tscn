@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dn681t6vdrvfs"]
+
+[ext_resource type="Script" path="res://scripts/collectable_item.gd" id="1_yge20"]
+[ext_resource type="Texture2D" uid="uid://cgkb2noi14g4n" path="res://assets/forsprite2_1.png" id="2_xjogx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cy8lm"]
+size = Vector2(16, 16)
+
+[node name="CollectableItem" type="Area2D"]
+collision_layer = 8
+collision_mask = 2
+script = ExtResource("1_yge20")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_xjogx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_cy8lm")

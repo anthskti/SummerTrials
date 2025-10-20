@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://shhnvik7biqm"]
+
+[ext_resource type="Script" path="res://scripts/pushable_box.gd" id="1_sucj0"]
+[ext_resource type="Texture2D" uid="uid://dsu1cv1oyffoc" path="res://assets/forsprite2.png" id="2_yql38"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sbokf"]
+size = Vector2(40, 40)
+
+[node name="PushableBox" type="RigidBody2D"]
+collision_layer = 4
+collision_mask = 7
+script = ExtResource("1_sucj0")
+can_be_pushed_by_nimble = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_sbokf")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(2.5, 2.5)
+texture = ExtResource("2_yql38")

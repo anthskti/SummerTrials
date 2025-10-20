@@ -1,12 +1,12 @@
 extends StaticBody2D
 
 @export var open_speed: float = 650.0
+@export var open_distance: float = 250.0
 @export var slide_direction: Vector2 = Vector2(0, -1)  # Up by default
 
 var is_open: bool = false
 var target_position: Vector2
 var start_position: Vector2
-var open_distance: float = 300.0  # How far the door moves
 var open_requests: int = 0  # Track how many plates want the door open
 
 @onready var sprite = $Sprite2D
@@ -29,7 +29,7 @@ func _process(delta):
 		sprite.modulate = Color(1, 0.5, 0.5, 1)  # Red and solid
 	
 	# Disable collision when fully open
-	collision.disabled = is_open and position.distance_to(target_position) < 1
+	# collision.disabled = is_open and position.distance_to(target_position) < 1
 
 func open():
 	open_requests += 1

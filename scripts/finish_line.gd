@@ -5,7 +5,7 @@ var sakuti_finished: bool = false
 var kitspii_finished: bool = false
 
 @onready var sprite = $Sprite2D
-@onready var game_manager = get_node("/root/Level1/GameManager")
+@onready var game_manager = $"../GameManager"
 func _ready():
 	# Connect the body_entered signal
 	body_entered.connect(_on_body_entered)

@@ -19,8 +19,8 @@ func _ready():
 	if not game_manager:
 		push_error("TimerUI: GameManager not found")
 
-func _process(delta):
 	# Safety check - don't update if nodes don't exist
+func _process(delta):
 	if not time_label or not badge_label or not game_manager:
 		return
 	

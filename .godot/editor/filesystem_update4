@@ -1,0 +1,14 @@
+res://scenes/collectable_item.tscn
+res://scenes/sakuti.tscn
+res://scenes/kitspii.tscn
+res://scenes/level_1.tscn
+res://scenes/level_2.tscn
+res://scenes/timer_ui.tscn
+res://scenes/pushable_box.tscn
+res://scripts/Player.gd
+res://scenes/pressure_plate.tscn
+res://scenes/finish_line.tscn
+res://scenes/player.tscn
+res://scenes/door.tscn
+res://scenes/bigpushable_box.tscn
+res://scripts/pushable_box.gd

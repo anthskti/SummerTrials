@@ -1,0 +1,11 @@
+res://scenes/collectable_item.tscn::2aab5aaa548539a1f044014cee03b8c8::1760930716::res://.godot/exported/133200997/export-138593738b832502d10dbb43592875da-collectable_item.scn
+res://scenes/door.tscn::40a72a88b7e2eb0e3ada322d11cc889a::1760932926::res://.godot/exported/133200997/export-3370694a3d56567dea5c3bf0058a536d-door.scn
+res://scenes/finish_line.tscn::e1dd54a1319d74f500aabafe0c0da346::1760930691::res://.godot/exported/133200997/export-64a3186a08f618f44c331a5edbeb5a4b-finish_line.scn
+res://scenes/kitspii.tscn::290566d9dcc1f0e7a677f25ec158dd6f::1760930655::res://.godot/exported/133200997/export-f933c36e01f5002d53fc9b0fe794528a-kitspii.scn
+res://scenes/level_1.tscn::56a613d8f02992da675aff8568af1d1a::1760933808::res://.godot/exported/133200997/export-6887eba858c6ae48b5ca13a7525fa2f9-level_1.scn
+res://scenes/level_2.tscn::689589f143130dcb28bf86655667b6b6::1760933943::res://.godot/exported/133200997/export-b9b238992d98ac928d045ce276500b1b-level_2.scn
+res://scenes/player.tscn::427bfe7a2f4cddda5a71ee8c76649ae4::1760930324::res://.godot/exported/133200997/export-234fb6894ec6226e856ab7f825500d3d-player.scn
+res://scenes/pressure_plate.tscn::e23334745f1c9da6984b70ba27466e2c::1760930766::res://.godot/exported/133200997/export-421b656bc73e592ca8f4c4be9a7840b7-pressure_plate.scn
+res://scenes/pushable_box.tscn::8ed96c7ef77da7098481c3c10c5dd6c2::1760933808::res://.godot/exported/133200997/export-059d3ca1a6766940b4905f1ef1c80453-pushable_box.scn
+res://scenes/sakuti.tscn::33168c28a8a9d06595f395de094f04db::1760930815::res://.godot/exported/133200997/export-7a95476f5dbd3efb7811567ace4be88f-sakuti.scn
+res://scenes/timer_ui.tscn::7e1f7458f9c495b6216b8bd4e359a194::1760933808::res://.godot/exported/133200997/export-f238c3ef56ac4b8a77addf4d82c8f864-timer_ui.scn

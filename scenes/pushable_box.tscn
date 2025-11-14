@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://shhnvik7biqm"]
+
+[ext_resource type="Texture2D" uid="uid://dsu1cv1oyffoc" path="res://assets/forsprite2.png" id="2_yql38"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sbokf"]
+size = Vector2(40, 40)
+
+[node name="PushableBox" type="RigidBody2D" groups=["Rigidbox"]]
+collision_layer = 2
+collision_mask = 2
+mass = 0.5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_sbokf")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(2.5, 2.5)
+texture = ExtResource("2_yql38")

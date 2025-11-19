@@ -22,7 +22,7 @@ func _ready():
 	else:  # kitspii
 		scale = Vector2(1, 1) 
 		speed = 130.0
-		jump_velocity = -330.0
+		jump_velocity = -400.0
 	
 	update_visual_state()
 

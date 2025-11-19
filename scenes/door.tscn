@@ -7,7 +7,7 @@
 size = Vector2(13, 301)
 
 [node name="Door" type="StaticBody2D"]
-collision_mask = 0
+collision_layer = 7
 script = ExtResource("1_4momt")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

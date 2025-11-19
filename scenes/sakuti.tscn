@@ -34,7 +34,7 @@ size = Vector2(13.3333, 16)
 size = Vector2(12, 55)
 
 [node name="Sakuti" type="CharacterBody2D"]
-collision_layer = 7
+collision_layer = 15
 script = ExtResource("1_eveah")
 character_name = "Sakuti"
 
@@ -45,6 +45,7 @@ sprite_frames = SubResource("SpriteFrames_tj2ah")
 animation = &"idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 scale = Vector2(2.25, 3)
 shape = SubResource("RectangleShape2D_msejq")
 

@@ -25,6 +25,10 @@ window/stretch/mode="canvas_items"
 
 Rigidbox=""
 Heavybox=""
+timer_ui=""
+level_complete=""
+collectible=""
+game_manager=""
 
 [input]
 

@@ -11,7 +11,7 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 # Visual feedback
 @onready var sprite = $AnimatedSprite2D
-@onready var collision = $CollisionShape2D
+@onready var collision = $CollisionShape2D # Issue since kitspii has custom collisons
 
 func _ready():
 	# Set character size based on type

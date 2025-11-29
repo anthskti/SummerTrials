@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://bahf31gkfrkpt"]
+[gd_scene load_steps=21 format=3 uid="uid://bahf31gkfrkpt"]
 
 [ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_v64uv"]
 [ext_resource type="Texture2D" uid="uid://dg6e3xksuih15" path="res://craftpix-net-256745-free-summer-pixel-art-backgrounds/PNG/summer5/1.png" id="2_fkwn3"]
@@ -13,6 +13,8 @@
 [ext_resource type="PackedScene" uid="uid://ccl4io31kbi6j" path="res://scenes/timer_ui.tscn" id="8_6fk7q"]
 [ext_resource type="Texture2D" uid="uid://c31b4j26prtr5" path="res://craftpix-net-256745-free-summer-pixel-art-backgrounds/PNG/summer7/2.png" id="8_qhx0p"]
 [ext_resource type="PackedScene" uid="uid://dn681t6vdrvfs" path="res://scenes/collectable_item.tscn" id="9_tbilk"]
+[ext_resource type="PackedScene" uid="uid://c0mj72w1dn2r" path="res://scenes/character_swap_ui.tscn" id="13_u4psf"]
+[ext_resource type="PackedScene" uid="uid://y5t5hstd113p" path="res://scenes/level_complete.tscn" id="14_0igrw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v70fj"]
 texture = ExtResource("4_2vujb")
@@ -7082,7 +7084,7 @@ sources/5 = SubResource("TileSetAtlasSource_5qjvm")
 [node name="Level1" type="Node2D"]
 position = Vector2(193, 538)
 
-[node name="GameManager" type="Node" parent="."]
+[node name="GameManager" type="Node" parent="." groups=["game_manager"]]
 script = ExtResource("1_v64uv")
 
 [node name="TextureRect" type="TextureRect" parent="."]
@@ -7120,9 +7122,14 @@ constant_linear_velocity = Vector2(-0.66, 0)
 slide_direction = Vector2(1, 0)
 
 [node name="FinishLine" parent="." instance=ExtResource("7_fnsus")]
-position = Vector2(947, -64)
+position = Vector2(192, -8)
 
-[node name="TimerUI" parent="." instance=ExtResource("8_6fk7q")]
+[node name="TimerUI" parent="." groups=["timer_ui"] instance=ExtResource("8_6fk7q")]
+
+[node name="CharacterSwapUI" parent="." instance=ExtResource("13_u4psf")]
 
 [node name="CollectableItem" parent="." groups=["collectible"] instance=ExtResource("9_tbilk")]
 position = Vector2(613, -253)
+
+[node name="LevelComplete" parent="." groups=["level_complete"] instance=ExtResource("14_0igrw")]
+next_level_path = "res://scenes/levels/level_2.tscn"

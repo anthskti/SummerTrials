@@ -1,7 +1,10 @@
 extends Area2D
 
+# Var to subtract time from timer
+@export var time_bonus: float = 5.0
+
 # Signal to notify when collected
-signal item_collected
+signal item_collected(collectible)
 
 var is_collected: bool = false
 
@@ -18,10 +21,8 @@ func _on_body_entered(body):
 
 func collect_item():
 	is_collected = true
-	emit_signal("item_collected")
 	
-	print("Item collected!")  # Debug
-	
+	item_collected.emit(self) 
 	# Visual feedback - fade out and spin
 	var tween = create_tween()
 	tween.set_parallel(true)

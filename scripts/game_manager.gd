@@ -4,6 +4,8 @@ extends Node
 @onready var sakuti = $"../Sakuti"
 @onready var kitspii = $"../Kitspii"
 
+# Reference for level completition popup
+
 var active_character = null
 var level_start_time: float = 0.0
 var level_time: float = 0.0
@@ -13,6 +15,7 @@ var level_complete: bool = false
 var collectible_obtained: bool = false
 var total_collectibles: int = 0
 var collected_count: int = 0
+var time_bonus_total: float = 0.0 # From Collectible_item
 
 func _ready():
 	# Start with Sakuti active
@@ -24,7 +27,8 @@ func _ready():
 
 func _process(delta):
 	if not level_complete:
-		level_time = (Time.get_ticks_msec() / 1000.0) - level_start_time
+		var raw_time = (Time.get_ticks_msec() / 1000.0) - level_start_time
+		level_time = max(0, raw_time - time_bonus_total) 
 	
 	# Handle character switching
 	if Input.is_action_just_pressed("swap_character"):
@@ -39,10 +43,14 @@ func register_collectibles():
 		if collectible.has_signal("item_collected"):
 			collectible.item_collected.connect(_on_collectible_obtained)
 
-func _on_collectible_obtained():
+func _on_collectible_obtained(collectible):
 	collected_count += 1
 	collectible_obtained = true
-	print("Collectible obtained! Total: ", collected_count, "/", total_collectibles)
+	time_bonus_total += collectible.time_bonus
+	print("Collectible obtained! -", collectible.time_bonus, " seconds")
+	
+	print("Total collected: ", collected_count, "/", total_collectibles)
+	print("Total time bonus: ", time_bonus_total, " seconds")
 	
 	# Will add bonus later
 
@@ -72,10 +80,18 @@ func get_collectible_count() -> int:
 
 func complete_level():
 	level_complete = true
-	var bonus_text = " (Bonus obtained!)" if collectible_obtained else ""
-	print("Level Complete! Time: ", level_time, " seconds", bonus_text)
-	print("Collectibles: ", collected_count, "/", total_collectibles)
-	# You can add level completion UI here later
+	print("Level Complete! Time: ", level_time, " seconds")
+	
+	# Get badge from TimerUI
+	var timer_ui = get_tree().get_first_node_in_group("timer_ui")
+	var badge = "Bronze"
+	if timer_ui and timer_ui.has_method("get_badge_for_time"):
+		badge = timer_ui.get_badge_for_time(level_time)
+	
+	# Show completion popup
+	var level_complete_ui = get_tree().get_first_node_in_group("level_complete")
+	if level_complete_ui.has_method("show_completion"):
+		level_complete_ui.show_completion(level_time, badge)
 
 func reset_level():
 	get_tree().reload_current_scene()

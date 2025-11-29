@@ -8,7 +8,7 @@ extends CanvasLayer
 
 # Set these for each level
 @export var next_level_path: String = ""  # e.g. "res://scenes/levels/level_2.tscn"
-@export var current_level_path: String = ""  # e.g. "res://scenes/levels/level_1.tscn"
+#@export var current_level_path: String = ""  # e.g. "res://scenes/levels/level_1.tscn"
 
 func _ready():
 	# Hide by default
@@ -34,15 +34,16 @@ func show_completion(time: float, badge: String):
 	# Color code badge
 	match badge:
 		"Diamond":
-			badge_label.modulate = Color(0.6, 0.9, 1.0)
+			badge_label.modulate = Color(0.6, 0.9, 1.0)  # Light blue
 		"Platinum":
-			badge_label.modulate = Color(0.9, 0.9, 0.9)
+			badge_label.modulate = Color(0.5, 0.0, 0.8)  # Silver/white
 		"Gold":
-			badge_label.modulate = Color(1.0, 0.84, 0.0)
+			badge_label.modulate = Color(1.0, 0.84, 0.0)  # Gold
 		"Silver":
-			badge_label.modulate = Color(0.75, 0.75, 0.75)
+			badge_label.modulate = Color(0.75, 0.75, 0.75)  # Silver
 		"Bronze":
-			badge_label.modulate = Color(0.8, 0.5, 0.2)
+			badge_label.modulate = Color(0.8, 0.5, 0.2)  # Bronze
+	
 	
 	# Hide next button if no next level
 	if next_level_path == "":

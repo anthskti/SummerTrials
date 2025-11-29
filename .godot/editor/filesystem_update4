@@ -9,3 +9,6 @@ res://scenes/timer_ui.tscn
 res://scripts/game_manager.gd
 res://scripts/level_complete.gd
 res://scripts/timer_ui.gd
+res://scenes/levels/level_3.tscn
+res://scenes/collectable_item.tscn
+res://scripts/main_menu.gd

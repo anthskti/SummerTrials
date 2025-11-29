@@ -79,4 +79,6 @@ text = "Exit Game"
 
 [connection signal="pressed" from="Level1Button" to="." method="_on_level_1_button_pressed"]
 [connection signal="pressed" from="Level2Button" to="." method="_on_level_2_button_pressed"]
+[connection signal="pressed" from="Level3Button" to="." method="_on_level_3_button_pressed"]
+[connection signal="pressed" from="Level4Button" to="." method="_on_level_4_button_pressed"]
 [connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]

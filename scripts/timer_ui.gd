@@ -52,8 +52,6 @@ func update_display(time: float):
 			badge_label.modulate = Color(0.75, 0.75, 0.75)  # Silver
 		"Bronze":
 			badge_label.modulate = Color(0.8, 0.5, 0.2)  # Bronze
-		_:
-			badge_label.modulate = Color(1, 1, 1)
 
 func get_badge_for_time(time: float) -> String:
 	if time <= diamond_time:

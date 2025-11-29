@@ -1,10 +1,10 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
-::res://::1764389490
+::res://::1764454489
 export_presets.cfg::TextFile::-1::1760935132::0::1::::<><>::
 icon.svg::CompressedTexture2D::2869946540241365099::1758718129::1758718141::1::::<><>::
-main_menu.tscn::PackedScene::6469375606778365041::1764388707::0::1::::<><>::res://scripts/main_menu.gd<>uid://bk2ipe8ka4y3u::::res://themes/general.tres<>uid://wvv6ncp2qwcn::::res://assets/Individual Frames/[2] Red/[1] Normal.png<>uid://cf3e8h7o035de::::res://assets/Individual Frames/[2] Red/[3] Hover.png
+main_menu.tscn::PackedScene::6469375606778365041::1764390248::0::1::::<><>::res://scripts/main_menu.gd<>uid://fjb04gm2ktr5::::res://assets/mainpage.png<>uid://bk2ipe8ka4y3u::::res://themes/general.tres<>uid://wvv6ncp2qwcn::::res://assets/Individual Frames/[2] Red/[1] Normal.png<>uid://cf3e8h7o035de::::res://assets/Individual Frames/[2] Red/[3] Hover.png
 README.md::TextFile::-1::1763744068::0::1::::<><>::
-::res://assets/::1764389471
+::res://assets/::1764455180
 elephant.png::CompressedTexture2D::8391472940887368795::1763080740::1763080740::1::::<><>::
 elephantface.png::CompressedTexture2D::8964933696994226873::1763590538::1763590759::1::::<><>::
 forsprite1.png::CompressedTexture2D::5742702696836679199::1760637836::1760637840::1::::<><>::
@@ -14,6 +14,8 @@ ground2.png::CompressedTexture2D::1035876540841923397::1763093162::1763093404::1
 ground.png::CompressedTexture2D::7580454841091418641::1763093137::1763093404::1::::<><>::
 mainpage.png::CompressedTexture2D::369630512844791212::1764389471::1764389490::1::::<><>::
 penguinface.png::CompressedTexture2D::5849409532647704397::1763590665::1763590759::1::::<><>::
+pressureplate.png::CompressedTexture2D::7137759968351628775::1764455045::1764455184::1::::<><>::
+pressureplatepressed.png::CompressedTexture2D::4457475293978744993::1764455153::1764455184::1::::<><>::
 strawberry.png::CompressedTexture2D::1323875667322974706::1763080762::1763080762::1::::<><>::
 ::res://assets/elephant/::1763082774
 elephant1.png::CompressedTexture2D::7806915659856722314::1763082734::1763082774::1::::<><>::
@@ -111,7 +113,7 @@ Summer3.png::CompressedTexture2D::6901361460176829705::1691097486::1763092554::1
 2.png::CompressedTexture2D::8834985894039642892::1691097260::1763092554::1::::<><>::
 3.png::CompressedTexture2D::8949786146952317952::1691097258::1763092554::1::::<><>::
 Summer4.png::CompressedTexture2D::8293973613167391095::1691097480::1763092554::1::::<><>::
-::res://scenes/::1764388194
+::res://scenes/::1764390019
 bigpushable_box.tscn::PackedScene::280018527800409716::1764099251::0::1::::<><>::uid://dsu1cv1oyffoc::::res://assets/forsprite2.png
 character_swap_ui.tscn::PackedScene::192733530677282579::1764387445::0::1::::<><>::res://scripts/character_swap_ui.gd<>uid://d0yxfbkybi15f::::res://assets/elephantface.png<>uid://cplq6j8ew5w8d::::res://assets/penguinface.png
 collectable_item.tscn::PackedScene::8137763866943833000::1764387445::0::1::::<><>::res://scripts/collectable_item.gd<>uid://s4kbk411e6m5::::res://assets/strawberry.png
@@ -119,15 +121,15 @@ door.tscn::PackedScene::8877734091814677183::1763916239::0::1::::<><>::res://scr
 elephantface.png::CompressedTexture2D::1763691411163764438::1763590733::1763590733::1::::<><>::
 finish_line.tscn::PackedScene::7897582204093846170::1763916239::0::1::::<><>::uid://bg5hun31xrld8::::res://icon.svg<>res://scripts/finish_line.gd
 kitspii.tscn::PackedScene::1078157435399753003::1764099788::0::1::::<><>::res://scripts/Player.gd<>uid://djhy036l5b2py::::res://assets/elephant/elephant1.png<>uid://u0n1say28wi8::::res://assets/elephant/elephant2.png<>uid://ca2y85p3lf6i4::::res://assets/elephant/elephant3.png
-level_complete.tscn::PackedScene::1747671172952545679::1764388194::0::1::::<><>::res://scripts/level_complete.gd<>uid://bgsremcb78ah3::::res://assets/Individual Frames/[1] Light Blue/[3] Hover.png<>uid://w3swotafyjrt::::res://assets/Individual Frames/[1] Light Blue/[1] Normal.png
+level_complete.tscn::PackedScene::1747671172952545679::1764390019::0::1::::<><>::res://scripts/level_complete.gd<>uid://bgsremcb78ah3::::res://assets/Individual Frames/[1] Light Blue/[3] Hover.png<>uid://w3swotafyjrt::::res://assets/Individual Frames/[1] Light Blue/[1] Normal.png
 player.tscn::PackedScene::3718257132096715270::1764104198::0::1::::<><>::
 pressure_plate.tscn::PackedScene::7595467352801147855::1763087150::0::1::::<><>::res://scripts/pressure_plate.gd<>uid://dsu1cv1oyffoc::::res://assets/forsprite2.png
 pushable_box.tscn::PackedScene::1278299179879084692::1764099251::0::1::::<><>::uid://dsu1cv1oyffoc::::res://assets/forsprite2.png
 sakuti.tscn::PackedScene::1343624582396405085::1764099788::0::1::::<><>::res://scripts/Player.gd<>uid://cyulfvpv7lbr4::::res://assets/penguin/penguin1.png<>uid://cc2yqtagxxa0o::::res://assets/penguin/penguin2.png<>uid://snp1c7e80110::::res://assets/penguin/penguin3.png
-timer_ui.tscn::PackedScene::4937703068874550703::1764103741::0::1::::<><>::res://scripts/timer_ui.gd
-::res://scenes/levels/::1764388641
-level_1.tscn::PackedScene::2401226290502335313::1764388641::0::1::::<><>::res://scripts/game_manager.gd<>uid://dg6e3xksuih15::::res://craftpix-net-256745-free-summer-pixel-art-backgrounds/PNG/summer5/1.png<>uid://pmjdilgi0bkl::::res://scenes/kitspii.tscn<>uid://te4khppinu1r::::res://scenes/sakuti.tscn<>uid://cn22qenyrggtb::::res://assets/forsprite1.png<>uid://dghkicwgxo23l::::res://scenes/pressure_plate.tscn<>uid://qm1qkmooe0ug::::res://craftpix-net-256745-free-summer-pixel-art-backgrounds/PNG/summer7/Summer7.png<>uid://dyqo8o4c7exyt::::res://scenes/door.tscn<>uid://dkrwa37truqcg::::res://scenes/finish_line.tscn<>uid://gw4l7gbtccs8::::res://craftpix-net-256745-free-summer-pixel-art-backgrounds/PNG/summer7/Summer7rev.png<>uid://ccl4io31kbi6j::::res://scenes/timer_ui.tscn<>uid://c31b4j26prtr5::::res://craftpix-net-256745-free-summer-pixel-art-backgrounds/PNG/summer7/2.png<>uid://dn681t6vdrvfs::::res://scenes/collectable_item.tscn<>uid://c0mj72w1dn2r::::res://scenes/character_swap_ui.tscn<>uid://y5t5hstd113p::::res://scenes/level_complete.tscn
-level_2.tscn::PackedScene::8933071807155386887::1764388194::0::1::::<><>::res://scripts/game_manager.gd<>uid://decxivhw7p3n4::::res://craftpix-net-256745-free-summer-pixel-art-backgrounds/PNG/summer6/1.png<>uid://pmjdilgi0bkl::::res://scenes/kitspii.tscn<>uid://te4khppinu1r::::res://scenes/sakuti.tscn<>uid://shhnvik7biqm::::res://scenes/pushable_box.tscn<>uid://dyqo8o4c7exyt::::res://scenes/door.tscn<>uid://dx4y6rpucamwq::::res://craftpix-net-256745-free-summer-pixel-art-backgrounds/PNG/summer 4/2.png<>uid://qm1qkmooe0ug::::res://craftpix-net-256745-free-summer-pixel-art-backgrounds/PNG/summer7/Summer7.png<>uid://gw4l7gbtccs8::::res://craftpix-net-256745-free-summer-pixel-art-backgrounds/PNG/summer7/Summer7rev.png<>uid://dkrwa37truqcg::::res://scenes/finish_line.tscn<>uid://dghkicwgxo23l::::res://scenes/pressure_plate.tscn<>uid://ccl4io31kbi6j::::res://scenes/timer_ui.tscn<>uid://dn681t6vdrvfs::::res://scenes/collectable_item.tscn
+timer_ui.tscn::PackedScene::4937703068874550703::1764390019::0::1::::<><>::res://scripts/timer_ui.gd
+::res://scenes/levels/::1764390019
+level_1.tscn::PackedScene::2401226290502335313::1764390018::0::1::::<><>::res://scripts/game_manager.gd<>uid://dg6e3xksuih15::::res://craftpix-net-256745-free-summer-pixel-art-backgrounds/PNG/summer5/1.png<>uid://pmjdilgi0bkl::::res://scenes/kitspii.tscn<>uid://te4khppinu1r::::res://scenes/sakuti.tscn<>uid://cn22qenyrggtb::::res://assets/forsprite1.png<>uid://dghkicwgxo23l::::res://scenes/pressure_plate.tscn<>uid://qm1qkmooe0ug::::res://craftpix-net-256745-free-summer-pixel-art-backgrounds/PNG/summer7/Summer7.png<>uid://dyqo8o4c7exyt::::res://scenes/door.tscn<>uid://dkrwa37truqcg::::res://scenes/finish_line.tscn<>uid://gw4l7gbtccs8::::res://craftpix-net-256745-free-summer-pixel-art-backgrounds/PNG/summer7/Summer7rev.png<>uid://ccl4io31kbi6j::::res://scenes/timer_ui.tscn<>uid://c31b4j26prtr5::::res://craftpix-net-256745-free-summer-pixel-art-backgrounds/PNG/summer7/2.png<>uid://dn681t6vdrvfs::::res://scenes/collectable_item.tscn<>uid://c0mj72w1dn2r::::res://scenes/character_swap_ui.tscn<>uid://y5t5hstd113p::::res://scenes/level_complete.tscn
+level_2.tscn::PackedScene::8933071807155386887::1764390019::0::1::::<><>::res://scripts/game_manager.gd<>uid://decxivhw7p3n4::::res://craftpix-net-256745-free-summer-pixel-art-backgrounds/PNG/summer6/1.png<>uid://pmjdilgi0bkl::::res://scenes/kitspii.tscn<>uid://te4khppinu1r::::res://scenes/sakuti.tscn<>uid://shhnvik7biqm::::res://scenes/pushable_box.tscn<>uid://dyqo8o4c7exyt::::res://scenes/door.tscn<>uid://dx4y6rpucamwq::::res://craftpix-net-256745-free-summer-pixel-art-backgrounds/PNG/summer 4/2.png<>uid://qm1qkmooe0ug::::res://craftpix-net-256745-free-summer-pixel-art-backgrounds/PNG/summer7/Summer7.png<>uid://gw4l7gbtccs8::::res://craftpix-net-256745-free-summer-pixel-art-backgrounds/PNG/summer7/Summer7rev.png<>uid://dkrwa37truqcg::::res://scenes/finish_line.tscn<>uid://dghkicwgxo23l::::res://scenes/pressure_plate.tscn<>uid://ccl4io31kbi6j::::res://scenes/timer_ui.tscn<>uid://dn681t6vdrvfs::::res://scenes/collectable_item.tscn
 level_3.tscn::PackedScene::3351689642970674294::1764099788::0::1::::<><>::res://scripts/game_manager.gd<>uid://booorpqf46cie::::res://craftpix-net-256745-free-summer-pixel-art-backgrounds/PNG/summer8/1.png<>uid://qm1qkmooe0ug::::res://craftpix-net-256745-free-summer-pixel-art-backgrounds/PNG/summer7/Summer7.png<>uid://b1ehwihyxkwt3::::res://craftpix-net-256745-free-summer-pixel-art-backgrounds/PNG/summer8/2.png<>uid://gw4l7gbtccs8::::res://craftpix-net-256745-free-summer-pixel-art-backgrounds/PNG/summer7/Summer7rev.png<>uid://pmjdilgi0bkl::::res://scenes/kitspii.tscn<>uid://te4khppinu1r::::res://scenes/sakuti.tscn<>uid://dkrwa37truqcg::::res://scenes/finish_line.tscn<>uid://dyqo8o4c7exyt::::res://scenes/door.tscn<>uid://dghkicwgxo23l::::res://scenes/pressure_plate.tscn<>uid://shhnvik7biqm::::res://scenes/pushable_box.tscn
 ::res://scripts/::1764383746
 character_swap_ui.gd::GDScript::-1::1764104254::0::1::::<>CanvasLayer<>::
@@ -141,5 +143,5 @@ Player.gd::GDScript::-1::1764103604::0::1::::<>CharacterBody2D<>::
 pressure_plate.gd::GDScript::-1::1760660017::0::1::::<>Area2D<>::
 pushable_box.gd::GDScript::-1::1763089331::0::1::::<>RigidBody2D<>::
 timer_ui.gd::GDScript::-1::1764102647::0::1::::<>CanvasLayer<>::
-::res://themes/::1764386614
-general.tres::Theme::3144560103811213076::1764386614::0::1::::<><>::uid://debqy0j4bpyne::::res://assets/Individual Frames/[4] Green/[1] Normal.png<>uid://r5emwpqv2gpn::::res://assets/Individual Frames/[4] Green/[3] Hover.png
+::res://themes/::1764389611
+general.tres::Theme::3144560103811213076::1764389611::0::1::::<><>::uid://debqy0j4bpyne::::res://assets/Individual Frames/[4] Green/[1] Normal.png<>uid://r5emwpqv2gpn::::res://assets/Individual Frames/[4] Green/[3] Hover.png

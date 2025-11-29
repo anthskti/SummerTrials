@@ -1,3 +1,4 @@
+Sprite2D
 TextureRect
 ColorRect
 Button
@@ -11,4 +12,3 @@ TextureButton
 Node
 CollisionPolygon2D
 Control
-TileMap

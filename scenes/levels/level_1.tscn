@@ -7122,7 +7122,7 @@ constant_linear_velocity = Vector2(-0.66, 0)
 slide_direction = Vector2(1, 0)
 
 [node name="FinishLine" parent="." instance=ExtResource("7_fnsus")]
-position = Vector2(192, -8)
+position = Vector2(170, 0)
 
 [node name="TimerUI" parent="." groups=["timer_ui"] instance=ExtResource("8_6fk7q")]
 

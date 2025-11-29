@@ -3,6 +3,9 @@ extends Area2D
 # Link this to a door in the Inspector
 @export var connected_door: NodePath
 
+@export var unpressed_sprite: Texture2D  # Assign in Inspector
+@export var pressed_sprite: Texture2D    # Assign in Inspector
+
 var is_pressed: bool = false
 var bodies_on_plate: int = 0
 
@@ -30,9 +33,9 @@ func update_plate_state():
 	
 	# Visual feedback
 	if is_pressed:
-		sprite.modulate = Color(1, 1, 0, 1)  # Yellow when pressed
+		sprite.texture = pressed_sprite
 	else:
-		sprite.modulate = Color(0.8, 0.8, 0.8, 1)  # Gray when not pressed
+		sprite.texture = unpressed_sprite
 	
 	# Notify door if state changed
 	if door and was_pressed != is_pressed:

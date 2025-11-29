@@ -67,9 +67,11 @@ func get_badge_for_time(time: float) -> String:
 	else:
 		return "Bronze"
 
+# debug
 func show_completion_badge():
 	if game_manager:
 		var final_time = game_manager.get_level_time()
 		var final_badge = get_badge_for_time(final_time)
+		
 		print("Level Complete! Time: ", final_time, " Badge: ", final_badge)
 		# You can add a popup UI here later

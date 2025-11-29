@@ -23,12 +23,13 @@ func _ready():
 	
 
 func show_completion(time: float, badge: String):
+	# Format time
 	var minutes = int(time) / 60
 	var seconds = int(time) % 60
 	var milliseconds = int((time - int(time)) * 100)
 	
-	time_label.text = "%02d:%02d.%02d Timed!" % [minutes, seconds, milliseconds]
-	badge_label.text = "Badge Earned: " + badge
+	time_label.text = "Time %02d:%02d.%02d!" % [minutes, seconds, milliseconds]
+	badge_label.text = "Earned: " + badge + ""
 	
 	# Color code badge
 	match badge:

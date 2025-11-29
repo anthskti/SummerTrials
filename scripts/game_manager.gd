@@ -80,13 +80,12 @@ func get_collectible_count() -> int:
 
 func complete_level():
 	level_complete = true
-	print("Level Complete! Time: ", level_time, " seconds")
+	#print("Level Complete! Time: ", level_time, " seconds")
 	
 	# Get badge from TimerUI
 	var timer_ui = get_tree().get_first_node_in_group("timer_ui")
 	var badge = "Bronze"
-	if timer_ui and timer_ui.has_method("get_badge_for_time"):
-		badge = timer_ui.get_badge_for_time(level_time)
+	badge = timer_ui.get_badge_for_time(level_time)
 	
 	# Show completion popup
 	var level_complete_ui = get_tree().get_first_node_in_group("level_complete")

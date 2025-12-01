@@ -1,13 +1,13 @@
+Panel
+Label
+Button
+CanvasLayer
 Sprite2D
 TextureRect
 ColorRect
-Button
 TextEdit
 HBoxContainer
 VBoxContainer
-Label
-Panel
-CanvasLayer
 TextureButton
 Node
 CollisionPolygon2D

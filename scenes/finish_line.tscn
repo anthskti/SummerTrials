@@ -1,10 +1,10 @@
 [gd_scene load_steps=4 format=3 uid="uid://dkrwa37truqcg"]
 
-[ext_resource type="Texture2D" uid="uid://bg5hun31xrld8" path="res://icon.svg" id="1_atd0l"]
 [ext_resource type="Script" path="res://scripts/finish_line.gd" id="1_vwmq1"]
+[ext_resource type="Texture2D" uid="uid://bvlpxlqlnrwox" path="res://assets/flag.png" id="2_byjws"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k57ca"]
-size = Vector2(143.662, 102)
+size = Vector2(135.211, 94)
 
 [node name="FinishLine" type="Area2D"]
 collision_layer = 0
@@ -19,4 +19,4 @@ shape = SubResource("RectangleShape2D_k57ca")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(-1.00032, 3)
 scale = Vector2(0.8, 0.79)
-texture = ExtResource("1_atd0l")
+texture = ExtResource("2_byjws")

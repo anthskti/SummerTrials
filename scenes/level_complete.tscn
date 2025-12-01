@@ -1,35 +1,7 @@
-[gd_scene load_steps=13 format=3 uid="uid://y5t5hstd113p"]
+[gd_scene load_steps=3 format=3 uid="uid://y5t5hstd113p"]
 
 [ext_resource type="Script" path="res://scripts/level_complete.gd" id="1_mdaqu"]
-[ext_resource type="Texture2D" uid="uid://bgsremcb78ah3" path="res://assets/Individual Frames/[1] Light Blue/[3] Hover.png" id="2_17166"]
-[ext_resource type="Texture2D" uid="uid://w3swotafyjrt" path="res://assets/Individual Frames/[1] Light Blue/[1] Normal.png" id="3_ipd8h"]
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yo2vw"]
-texture = ExtResource("3_ipd8h")
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cc88f"]
-texture = ExtResource("2_17166")
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5s11u"]
-texture = ExtResource("3_ipd8h")
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8e13a"]
-texture = ExtResource("3_ipd8h")
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0j8k6"]
-texture = ExtResource("2_17166")
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uvtoj"]
-texture = ExtResource("3_ipd8h")
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dmo14"]
-texture = ExtResource("3_ipd8h")
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_601x7"]
-texture = ExtResource("2_17166")
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wwb53"]
-texture = ExtResource("3_ipd8h")
+[ext_resource type="Theme" uid="uid://0rd7wmxtuffe" path="res://themes/mybutton.tres" id="2_6c0rf"]
 
 [node name="LevelComplete" type="CanvasLayer"]
 script = ExtResource("1_mdaqu")
@@ -47,6 +19,7 @@ offset_right = 176.0
 offset_bottom = 133.5
 grow_horizontal = 2
 grow_vertical = 2
+metadata/_edit_use_anchors_ = true
 
 [node name="TitleLabel" type="Label" parent="Panel"]
 layout_mode = 1
@@ -101,14 +74,7 @@ offset_left = 33.0
 offset_top = 180.0
 offset_right = 110.0
 offset_bottom = 234.0
-theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0.32549, 0.32549, 0.32549, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_styles/hover = SubResource("StyleBoxTexture_yo2vw")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_cc88f")
-theme_override_styles/normal = SubResource("StyleBoxTexture_5s11u")
+theme = ExtResource("2_6c0rf")
 text = "Retry
 "
 
@@ -118,14 +84,7 @@ offset_left = 126.0
 offset_top = 180.0
 offset_right = 213.0
 offset_bottom = 234.0
-theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0.32549, 0.32549, 0.32549, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_styles/hover = SubResource("StyleBoxTexture_8e13a")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_0j8k6")
-theme_override_styles/normal = SubResource("StyleBoxTexture_uvtoj")
+theme = ExtResource("2_6c0rf")
 text = "Menu
 "
 
@@ -135,13 +94,7 @@ offset_left = 230.0
 offset_top = 180.0
 offset_right = 311.0
 offset_bottom = 234.0
-theme_override_colors/font_hover_color = Color(0.327299, 0.327299, 0.327299, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_styles/hover = SubResource("StyleBoxTexture_dmo14")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_601x7")
-theme_override_styles/normal = SubResource("StyleBoxTexture_wwb53")
+theme = ExtResource("2_6c0rf")
 text = "Next"
 
 [connection signal="pressed" from="Panel/RetryButton" to="." method="_on_retry_button_pressed"]

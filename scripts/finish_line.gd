@@ -33,4 +33,4 @@ func check_level_complete():
 	if sakuti_finished and kitspii_finished:
 		game_manager.complete_level()
 		# Visual feedback
-		sprite.modulate = Color(0, 1, 0, 1)  # Turn green when complete
+		sprite.modulate = Color(1, 1, 1, 1)
